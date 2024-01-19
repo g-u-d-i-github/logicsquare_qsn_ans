@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question3</title>
+    <style>
+        td,tr{
+            border: 1px solid red;
+            padding: 1.2rem;
+        }
+        table{
+            
+        }
+        .mainDiv{
+            display: flex;
+            flex-direction: column;
+
+        }
+        *{
+            color: rgb(0, 0, 0);
+            font-size: 1rem;
+        }
+        input{
+            width: 20rem;
+            height: 2rem;
+        }
+        body{
+          
+            background-blend-mode: multiply;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body onload="getData()">
+    <div class="mainDiv">
+        <div><label for="search"><h1>SEARCH CAFE</h1></label>
+            <input type="text" id="search" placeholder="enter cafe name" onkeyup="fetchCafe()" /></div>
+            <br>
+        <table></table>
+    </div>
+</body>
+
+<script src="third.js"></script>
+</html>
